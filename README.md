@@ -35,3 +35,9 @@ python -m unittest discover -s tests -v
 ```
 
 Results are derived from the input dataset, with direction-aware thresholds (higher is better for availability; lower is better for restoration time). The metrics are **fictional** and do not represent any employer's service performance. GitHub Actions runs tests on pushes and pull requests.
+
+## Historical KPI trend analysis
+
+The [history module](history.py) compares successive KPI snapshots, calculates change, and evaluates improving or declining trends according to whether higher or lower values are better. [Trend tests](tests/test_history.py) cover both directions and invalid duplicate periods.
+
+The current browser demo is still a single-period view; trend analysis is available in Python and is not yet integrated into the browser UI.
