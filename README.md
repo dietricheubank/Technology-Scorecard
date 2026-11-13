@@ -26,3 +26,12 @@ The KPI definitions and thresholds are synthetic. A real scorecard needs documen
 - Add versioned sample data, user-facing CLI, and packaging when project grows.
 
 License: MIT (parent repository).
+
+## Run from sample JSON
+
+```bash
+python cli.py examples/fictional-metrics.json
+python -m unittest discover -s tests -v
+```
+
+Results are derived from the input dataset, with direction-aware thresholds (higher is better for availability; lower is better for restoration time). The metrics are **fictional** and do not represent any employer's service performance. GitHub Actions runs tests on pushes and pull requests.
