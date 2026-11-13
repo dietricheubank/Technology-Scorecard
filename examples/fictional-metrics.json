@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Service availability",
+    "actual": 99.91,
+    "target": 99.9,
+    "direction": "up",
+    "unit": "%"
+  },
+  {
+    "name": "Median restoration time",
+    "actual": 3.2,
+    "target": 2,
+    "direction": "down",
+    "unit": "hours"
+  },
+  {
+    "name": "Milestones delivered",
+    "actual": 87,
+    "target": 90,
+    "direction": "up",
+    "unit": "%"
+  }
+]
